@@ -470,7 +470,7 @@ h6 {
 }
 
 .footer .social-links a {
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -478,10 +478,10 @@ h6 {
   color: var(--contrast-color);
   line-height: 1;
   margin: 0 4px;
-  border-radius: 50%;
+  border-radius: 50px;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 100px;
+  height: 40px;
   transition: 0.3s;
 }
 
@@ -733,7 +733,7 @@ section,
   background-color: color-mix(in srgb, var(--default-color), transparent 90%);
   color: var(--default-color);
   font-size: 14px;
-  width: 40px;
+  width: 100px;
   height: 40px;
   border-radius: 50px;
   display: inline-flex;
