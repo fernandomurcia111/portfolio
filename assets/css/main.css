@@ -608,7 +608,7 @@ section,
   position: relative;
 }
 
-.section-title h2::after {
+.section-title div::after {
   content: "";
   width: 120px;
   height: 1px;
@@ -782,10 +782,11 @@ section,
 # Skills Section
 --------------------------------------------------------------*/
 .skills .progress {
-  height: 60px;
+  height: 140px;
   display: block;
   background: none;
   border-radius: 0;
+  margin-right: 10%;
 }
 
 .skills .progress .skill {
@@ -950,6 +951,14 @@ section,
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#skills > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(1) > svg:nth-child(2){
+  margin-right: 3%;
+}
+
+.icono_tecnologias{
+  height: 100px;
 }
 
 .resume .resume-item {
