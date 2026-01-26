@@ -782,11 +782,10 @@ section,
 # Skills Section
 --------------------------------------------------------------*/
 .skills .progress {
-  height: 140px;
+  height: 240px;
   display: block;
   background: none;
   border-radius: 0;
-  margin-right: 10%;
 }
 
 .skills .progress .skill {
@@ -959,6 +958,7 @@ section,
 
 .icono_tecnologias{
   height: 100px;
+  margin-bottom: 5px;
 }
 
 .resume .resume-item {
@@ -1156,45 +1156,6 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
-.portfolio .portfolio-filters {
-  padding: 0;
-  margin: 0 auto 20px auto;
-  list-style: none;
-  text-align: center;
-}
-
-.portfolio .portfolio-filters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 10px;
-  line-height: 1;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
-  color: var(--accent-color);
-}
-
-.portfolio .portfolio-filters li:first-child {
-  margin-left: 0;
-}
-
-.portfolio .portfolio-filters li:last-child {
-  margin-right: 0;
-}
-
-@media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
-    font-size: 14px;
-    margin: 0 5px;
-  }
-}
-
 .portfolio .portfolio-content {
   position: relative;
   overflow: hidden;
@@ -1220,7 +1181,6 @@ section,
   font-weight: 400;
   color: #ffffff;
   display: inline-block;
-  background-color: black;
 }
 
 .portfolio .portfolio-content .portfolio-info p {
@@ -1252,7 +1212,7 @@ section,
 }
 
 .portfolio .portfolio-content .portfolio-info .details-link {
-  left: 50%;
+  left: 45%;
   font-size: 34px;
   line-height: 0;
 }
