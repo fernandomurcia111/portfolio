@@ -1,0 +1,446 @@
+/* -----------------------------------------------------------------------------------
+   GENERAL
+----------------------------------------------------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #000;
+}
+
+.limit_page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kanit', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* -----------------------------------------------------------------------------------
+   HEADER
+----------------------------------------------------------------------------------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header_mobile_group {
+    display: contents;
+}
+
+.imagen_logo {
+    height: 60px;
+    object-fit: contain;
+}
+
+.icono_hamburguesa {
+    display: none;
+    color: #270651;
+    cursor: pointer;
+}
+
+.separador_seccion {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin-bottom: 30px;
+}
+
+.barra_busqueda {
+    display: flex;
+    align-items: center;
+    border: 2px solid #000;
+    background-color: #fff;
+    padding: 5px 15px;
+    width: 100%;
+    max-width: 400px;
+    transition: all 0.3s ease;
+}
+
+.barra_busqueda input {
+    border: none;
+    background: transparent;
+    outline: none;
+    flex-grow: 1;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.barra_busqueda button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+    color: #000;
+}
+
+.barra_busqueda:hover {
+    background-color: #270651;
+    border-color: #270651;
+}
+.barra_busqueda:hover input,
+.barra_busqueda:hover input::placeholder,
+.barra_busqueda:hover button {
+    color: #fff;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.boton_blanco, .boton_morado {
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Kanit', sans-serif;
+    border: 2px solid #270651;
+    white-space: nowrap;
+}
+
+.boton_blanco {
+    background-color: #fff;
+    color: #000;
+}
+
+.boton_morado {
+    background-color: #270651;
+    color: #fff;
+}
+
+.boton_blanco:hover {
+    background-color: #270651;
+    color: #fff;
+}
+
+.boton_morado:hover {
+    background-color: #fff;
+    color: #270651;
+}
+
+/* -----------------------------------------------------------------------------------
+   MAIN
+----------------------------------------------------------------------------------- */
+.producto_top_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.columna_img, .columna_info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.columna_info h2 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.descripcion_texto {
+    margin-bottom: 30px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.caja_compra {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.grupo_precio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.precio_tachado {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 18px;
+}
+
+.precio_actual_wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.precio_grande {
+    font-family: 'Kanit', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1;
+}
+
+.etiqueta_oferta {
+    background-color: #270651;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+}
+
+.botones_accion {
+    display: flex;
+    gap: 10px;
+}
+
+.boton_comprar {
+    flex-grow: 1;
+    background-color: #fff;
+    color: #270651;
+    border: 2px solid #270651;
+    padding: 15px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton_comprar:hover {
+    background-color: #270651;
+    color: #fff;
+}
+
+.boton_favorito {
+    width: 55px;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    font-size: 24px;
+    color: #270651;
+    cursor: pointer;
+    transition: border 0.3s ease;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.boton_favorito:hover { border-color: #270651; }
+
+/* -----------------------------------------------------------------------------------
+   SECCIONES EXTRA
+----------------------------------------------------------------------------------- */
+.seccion_specs, .seccion_relacionados {
+    margin-bottom: 80px;
+}
+
+.titulo_h2 {
+    font-size: 28px;
+    border-left: 5px solid #270651;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+.tabla_container {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.tabla_datos {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px;
+}
+
+.tabla_datos th, .tabla_datos td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.tabla_datos th {
+    background-color: #f9f9f9;
+    width: 30%;
+    color: #270651;
+}
+
+.grid_productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta_item {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.ajuste_altura_img {
+    height: 150px;
+}
+
+.foto_placeholder {
+    height: 150px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.info_item { padding: 15px; }
+.info_item h3 { font-size: 16px; margin-bottom: 10px; }
+.precio_item { display: block; font-weight: bold; font-size: 20px; margin-bottom: 10px; }
+.boton_mini {
+    background: #000;
+    color: #fff;
+    border: 1px solid black;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.boton_mini:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* -----------------------------------------------------------------------------------
+   FOOTER
+----------------------------------------------------------------------------------- */
+.footer {
+    background-color: #111111;
+    color: #b0b0b0;
+    padding-top: 60px;
+    margin-top: 80px;
+    font-family: 'Inter', sans-serif;
+    border-top: 4px solid #270651;
+}
+
+.footer_columnas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 50px;
+}
+
+.columna_footer {
+    flex: 1;
+    min-width: 200px;
+}
+
+.titulo_footer {
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.lista_links {
+    list-style: none;
+}
+
+.lista_links li {
+    margin-bottom: 10px;
+}
+
+.lista_links a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.lista_links a:hover {
+    color: #ffffff;
+    padding-left: 5px;
+}
+
+.redes_sociales {
+    display: flex;
+    gap: 15px;
+}
+
+.redes_sociales a {
+    color: #b0b0b0;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.redes_sociales a:hover {
+    color: #ffffff;
+}
+
+.footer_bottom {
+    background-color: #000000;
+    padding: 10px 0;
+    border-top: 1px solid #222;
+    text-align: center;
+}
+
+/* -----------------------------------------------------------------------------------
+   RESPONSIVE
+----------------------------------------------------------------------------------- */
+@media (max-width: 915px) {
+    .header_mobile_group {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    .icono_hamburguesa {
+        display: block;
+    }
+
+    .barra_busqueda {
+        order: 3;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+@media (max-width: 770px) {
+    .columna_img, .columna_info {
+        min-width: 100%;
+    }
+    .columna_info h2 {
+        font-size: 24px;
+    }
+    .precio_grande {
+        font-size: 40px; 
+    }
+}

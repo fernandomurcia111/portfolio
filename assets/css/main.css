@@ -536,11 +536,19 @@ h6 {
 .page-title .heading {
   padding: 160px 0 80px 0;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  background-image: url(/assets/img/banner.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .page-title .heading h1 {
   font-size: 38px;
   font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+.page-title .heading h1 p {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+
 }
 
 .page-title nav {
