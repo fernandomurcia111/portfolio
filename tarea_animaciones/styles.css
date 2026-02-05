@@ -1,0 +1,159 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333; 
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23DCEFFA' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+
+}
+
+div{
+    background-image: linear-gradient(to bottom, #d4f1ff 80%, #0206fe 20%);
+    width:500px;
+    height: 350px; 
+    overflow:hidden;
+    position:relative;
+    box-shadow: -1px -1px 20px 0px rgba(255,255,255,1),
+   -4px -4px 5px 0px rgba(255,255,255,1),
+   7px 7px 20px 0px rgba(0,0,0,.4),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+}
+
+div svg{
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    height:100%;
+}
+
+div img{
+    position:absolute;
+}
+#DarkWaves{
+    width:calc(100% + 40px);
+    left:-40px;
+    animation-name: dark_waves;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#LightWaves{
+    width:calc(100% + 40px);
+    left:-40px;
+    top: 100%;
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    animation-name: light_waves;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#sol{
+    top:20px;
+    left:20px;
+    width: 15%;
+    animation-name: sol; 
+    animation-duration: 5s;       
+    animation-timing-function: ease; 
+    animation-iteration-count: infinite;
+}
+#barco{
+    bottom: 86px;
+    width: 170px;
+    height:auto;
+    right:-170px;
+    animation-name: barco; 
+    animation-duration: 10s;       
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
+}
+#peces{
+    width: 49px;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    animation-name: peces; 
+    animation-duration: 7s;       
+    animation-timing-function: ease; 
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+#nubes{    
+    width: 164px;
+    right: 87px;
+    top: 35px;
+    /*animation: AnimacionNubes 15s linear infinite;*/
+}
+
+@keyframes sol {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(360deg) scale(1.5);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+@keyframes light_waves {
+    0% {
+        transform: translateX(-60px);
+    }
+    50% {
+        transform: translateX(60px); 
+    }
+    100% {
+        transform: translateX(-60px); 
+    }
+}
+@keyframes dark_waves {
+    0% {
+        transform: translateX(60px);
+    }
+    50% {
+        transform: translateX(-60px); 
+    }
+    100% {
+        transform: translateX(60px); 
+    }
+}
+@keyframes barco {
+    0% { transform: translateX(-140px) rotate(0deg); }
+    10% { transform: translateX(-216px) rotate(-5deg); }
+    20% { transform: translateX(-292px) rotate(5deg); }
+    30% { transform: translateX(-368px) rotate(-5deg); }
+    40% { transform: translateX(-444px) rotate(5deg); }
+    50% { transform: translateX(-520px) rotate(0deg); }
+    60% { transform: translateX(-444px) rotate(5deg); }
+    70% { transform: translateX(-368px) rotate(-5deg); }
+    80% { transform: translateX(-292px) rotate(5deg); }
+    90% { transform: translateX(-216px) rotate(-5deg); }
+    100% { transform: translateX(-140px) rotate(0deg); }
+}
+@keyframes peces {
+    25% {
+        transform: translateX(-115px) translateY(-200px);
+    }
+    50% {
+        transform: translateX(-230px) translateY(0px) rotate(-50deg);
+    }
+    75% {
+        transform: translateX(-345px) translateY(-180px);
+    }
+    100% {
+        transform: translateX(-460px) translateY(0px) rotate(-120deg);
+    }
+}
