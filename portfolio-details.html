@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -8,34 +8,22 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-  <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
   <link rel="manifest" href="assets/img/site.webmanifest">
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Mar 05 2025 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="portfolio-details-page">
@@ -44,15 +32,13 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Fernando Murcia</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="resume.html">Curriculum</a></li>
+          <li><a href="curriculum.html">Curriculum</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contacto</a></li>
         </ul>
@@ -64,7 +50,6 @@
 
   <main class="main">
 
-    <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="heading">
         <div class="container">
@@ -84,10 +69,7 @@
           </ol>
         </div>
       </nav>
-    </div><!-- End Page Title -->
-
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
+    </div><section id="portfolio-details" class="portfolio-details section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -112,25 +94,9 @@
                 }
               </script>
 
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-10.webp" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-7.webp" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-4.webp" alt="">
-                </div>
-
-              </div>
+              <div class="swiper-wrapper align-items-center" id="project-slides">
+                  </div>
+              
               <div class="swiper-pagination"></div>
             </div>
           </div>
@@ -138,17 +104,19 @@
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
               <h3>Información del proyecto</h3>
-              <ul>
-                <li><strong>Categoría</strong>: Web design</li>
-                <li><strong>Tiempo de realización</strong>: 01 March, 2020</li>
-                <li><strong>URL</strong>: <a href="#">www.example.com</a></li>
-              </ul>
+              
+              <ul id="project-info-list">
+                  </ul>
+              
             </div>
+            
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Descripción</h2>
-              <p>
-                Esta es la descripción del proyecto, en este caso el calendario de adviento 
+              
+              <h2 id="project-title">Cargando proyecto...</h2>
+              <p id="project-description">
+                Si ves esto, selecciona un proyecto desde la página de Portfolio.
               </p>
+              
             </div>
           </div>
 
@@ -156,9 +124,7 @@
 
       </div>
 
-    </section><!-- /Portfolio Details Section -->
-
-  </main>
+    </section></main>
 
   <footer id="footer" class="footer dark-background">
     <div class="container">
@@ -172,23 +138,94 @@
           <span>Copyright</span> <strong class="px-1 sitename">Fernando Murcia</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
+  <script>
+    const projectsData = {
+      "adviento": {
+        title: "Calendario de Adviento",
+        category: "Desarrollo Web",
+        date: "Diciembre 2026",
+        url: "calendario_de_adviento/index.html",
+        description: "En este proyecto realicé un 'calendario de adviento' en el que cada día era una tarjeta que se abría y dentro había un svg con temática navideña. Utilicé tecnologías como HTML, CSS y Java Script.",
+        images: [
+          "assets/img/portfolio/Calendario_de_adviento.png",
+        ]
+      },
+      "compresion": {
+        title: "Compresión de Imágenes",
+        category: "Optimización",
+        date: "Enero 2026",
+        url: "compresion_imagenes/index.html",
+        description: "Estudio y demostración práctica sobre la reducción de peso en imágenes web utilizando formatos modernos como WebP y AVIF para mejorar el rendimiento de carga.",
+        images: [
+          "assets/img/portfolio/Compresion_de_imagenes.png"
+        ]
+      },
+      "producto": {
+        title: "Página de Producto",
+        category: "E-commerce",
+        date: "Febrero 2026",
+        url: "pagina_producto.html",
+        description: "Diseño y maquetación de una landing page para un PC Gaming de alta gama. Incluye galerías, especificaciones técnicas y diseño responsive.",
+        images: [
+          "assets/img/portfolio/Producto.png"
+        ]
+      },
+      "animaciones": {
+        title: "Animación de Barco",
+        category: "CSS Puro",
+        date: "Marzo 2026",
+        url: "tarea_animaciones/index.html",
+        description: "Proyecto creativo enfocado en el uso de @keyframes y transformaciones CSS para simular movimiento sin utilizar JavaScript.",
+        images: [
+          "assets/img/portfolio/Animaciones.png"
+        ]
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const projectId = params.get('id');
+
+      const project = projectsData[projectId];
+
+      if (project) {
+        document.getElementById('project-title').textContent = project.title;
+        document.getElementById('project-description').textContent = project.description;
+
+        const infoList = document.getElementById('project-info-list');
+        infoList.innerHTML = `
+          <li><strong>Categoría</strong>: ${project.category}</li>
+          <li><strong>Fecha</strong>: ${project.date}</li>
+          <li><strong>URL</strong>: <a href="${project.url}" target="_blank">Ver proyecto</a></li>
+        `;
+
+        const slidesContainer = document.getElementById('project-slides');
+        let slidesHTML = '';
+        project.images.forEach(imgSrc => {
+          slidesHTML += `
+            <div class="swiper-slide">
+              <img src="${imgSrc}" alt="${project.title}">
+            </div>
+          `;
+        });
+        slidesContainer.innerHTML = slidesHTML;
+      } else {
+        document.getElementById('project-title').textContent = "Selecciona un proyecto";
+        document.getElementById('project-description').textContent = "Vuelve a la página principal y haz clic en uno de los proyectos.";
+      }
+    });
+  </script>
+
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -200,7 +237,6 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
