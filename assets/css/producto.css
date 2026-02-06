@@ -1,16 +1,14 @@
-/* -----------------------------------------------------------------------------------
-   MODIFICAIONES GENERALES
------------------------------------------------------------------------------------ */
+/* 
+------------------------------
+MODIFICAIONES GENERALES
+------------------------------
+*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
-    color: #000;
-}
 
 .limit_page {
     width: 90%;
@@ -18,7 +16,7 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+body {
     font-family: 'Kanit', sans-serif;
 }
 
@@ -27,9 +25,11 @@ img {
     height: auto;
 }
 
-/* -----------------------------------------------------------------------------------
-   HEADER
------------------------------------------------------------------------------------ */
+/*
+-------------
+HEADER
+-------------
+*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -46,10 +46,6 @@ img {
     display: contents;
 }
 
-.imagen_logo {
-    height: 60px;
-    object-fit: contain;
-}
 
 .icono_hamburguesa {
     display: none;
@@ -142,9 +138,11 @@ img {
     color: #270651;
 }
 
-/* -----------------------------------------------------------------------------------
-   MAIN
------------------------------------------------------------------------------------ */
+/*
+-------
+MAIN
+-------
+*/
 .producto_top_container {
     display: flex;
     justify-content: space-between;
@@ -197,7 +195,6 @@ img {
 }
 
 .precio_grande {
-    font-family: 'Kanit', sans-serif;
     font-size: 48px;
     font-weight: 700;
     color: #000;
@@ -211,7 +208,6 @@ img {
     border-radius: 4px;
     font-size: 14px;
     font-weight: bold;
-    font-family: 'Kanit', sans-serif;
 }
 
 .botones_accion {
@@ -251,9 +247,11 @@ img {
 }
 .boton_favorito:hover { border-color: #270651; }
 
-/* -----------------------------------------------------------------------------------
-   SECCIONES EXTRA
------------------------------------------------------------------------------------ */
+/* 
+---------------------
+SECCIONES EXTRA
+---------------------
+*/
 .seccion_specs, .seccion_relacionados {
     margin-bottom: 80px;
 }
@@ -304,10 +302,6 @@ img {
     padding-bottom: 20px;
 }
 
-.ajuste_altura_img {
-    height: 150px;
-}
-
 .foto_placeholder {
     height: 150px;
     background: #ffffff;
@@ -319,7 +313,12 @@ img {
 
 .info_item { padding: 15px; }
 .info_item h3 { font-size: 16px; margin-bottom: 10px; }
-.precio_item { display: block; font-weight: bold; font-size: 20px; margin-bottom: 10px; }
+.precio_item {
+    display: block;
+    font-weight: bold; 
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 .boton_mini {
     background: #000;
     color: #fff;
@@ -333,9 +332,11 @@ img {
     color: #000000;
 }
 
-/* -----------------------------------------------------------------------------------
-   FOOTER
------------------------------------------------------------------------------------ */
+/*
+------------
+FOOTER
+------------
+*/
 .footer {
     background-color: #111111;
     color: #b0b0b0;
@@ -406,9 +407,11 @@ img {
     text-align: center;
 }
 
-/* -----------------------------------------------------------------------------------
-   RESPONSIVE
------------------------------------------------------------------------------------ */
+/* 
+-------------
+RESPONSIVE
+-------------
+*/
 @media (max-width: 915px) {
     .header_mobile_group {
         display: flex;
@@ -429,8 +432,36 @@ img {
 
     .navbar {
         display: none;
+        width: 100%;
+    }
+
+    .navbar.navbar_activo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #ffffff;
+        padding: 20px;
+        border-bottom: 2px solid #270651;
+        z-index: 1000;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        order: 4;
+    }
+
+    .navbar.navbar_activo li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    .navbar.navbar_activo button {
+        width: 100%;
+        justify-content: center;
     }
 }
+
 @media (max-width: 770px) {
     .columna_img, .columna_info {
         min-width: 100%;

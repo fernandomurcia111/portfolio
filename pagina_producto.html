@@ -107,7 +107,7 @@
                     </div>
                 </div>
                 <div class="tarjeta_item">
-                    <div class="foto_placeholder"><img src="assets/img/imagen_producto/raton.webp" alt="Raton" class="ajuste_altura_img"></div>
+                    <div class="foto_placeholder"><img src="assets/img/imagen_producto/raton.webp" alt="Raton"></div>
                     <div class="info_item">
                         <h3>Ratón Gaming</h3>
                         <span class="precio_item">29,99€</span>
@@ -159,5 +159,14 @@
         </div>
     </footer>
 
+    <script>
+        const boton_hamburguesa = document.querySelector('.icono_hamburguesa');
+        const menu_navegacion = document.querySelector('.navbar');
+
+        boton_hamburguesa.addEventListener('click', () => {
+            // Alterna la clase 'navbar_activo'
+            menu_navegacion.classList.toggle('navbar_activo');
+        });
+    </script>
 </body>
 </html>
